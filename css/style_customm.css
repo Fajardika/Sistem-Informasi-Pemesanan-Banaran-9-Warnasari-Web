@@ -1,0 +1,389 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap");
+
+:root {
+    --brand: #008037;
+    --brand2: #fd8d19;
+    --brand3: #ffe0a7;
+    --hover: #47c17c;
+    --dark: #092032;
+    --light: rgb(255, 255, 255);
+    --shadow: 0px 6px 30px rgba(0, 0, 0, 0.402);
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    color: var(--dark);
+    line-height: 1;
+    text-align: justify;
+}
+
+a {
+    color: var(--dark);
+}
+
+a:hover {
+    color: var(--brand2);
+}
+
+/* navbar */
+.navbar {
+  color: var(--dark);
+  background: var(--light);
+}
+
+.navbar .navbar-nav .nav-link {
+  color: var(--brand);
+}
+
+.navbar .navbar-nav .nav-link:hover {
+  color: var(--hover);
+  
+}
+
+.navbar .navbar-nav .nav-link.active {
+  color: var(--brand2);
+  font-weight: bold;
+  border: 2px;
+  border-bottom-style: solid;
+  border-bottom-color: var(--brand2); 
+}
+
+/* Nav Untuk Menu */
+.nav-item .nav-link{
+  color: var(--brand);
+}
+
+.nav-item .nav-link:hover {
+  color: var(--hover);
+  
+}
+
+.nav-item .nav-link.active {
+  color: var(--brand2);
+}
+
+
+/* Animasi */
+#left {
+  position: relative;
+  animation: darikiri 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes darikiri {
+  from {left: -50px; opacity: 0.01;}
+  to {left: 0px; }
+}
+
+#right {
+  position: relative;
+  animation: darikanan 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes darikanan {
+  from {right: -50px; opacity: 0.01;}
+  to {right: 0px; }
+}
+
+#top {
+  position: relative;
+  animation: dariatas 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes dariatas {
+  from {top: -50px; opacity: 0.01;}
+  to {top: 0px; }
+}
+
+#bottom {
+  position: relative;
+  animation: daribawah 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes daribawah {
+  from {bottom: -50px; opacity: 0.01;}
+  to {bottom: 0px; }
+}
+
+/* Font Judul */
+#sub_judul {
+    color: var(--brand2);
+    text-shadow: 1px 2px var(--brand);
+    font-weight: bold;
+    font-family: cursive;
+}
+
+#sub_judul2 {
+    color: var(--brand);
+    text-shadow: 1px 2px var(--light);
+    font-weight: bold;
+    font-family: cursive;
+}
+
+#sub_judul3 {
+    color: var(--light);
+    text-shadow: 1px 2px var(--brand2);
+    font-weight: bold;
+    font-family: cursive;
+}
+
+#sub_judul4 {
+  color: var(--brand);
+  /* text-shadow: 1px 1px var(--brand2); */
+  font-weight: bold;
+  font-family: cursive;
+}
+
+#sub_judul5 {
+    color: var(--light);
+    text-shadow: 1px 2px var(--brand);
+    font-weight: bold;
+    font-family: cursive;
+}
+
+#sub_judul6 {
+    color: var(--brand);
+    text-shadow: 1px 2px var(--brand2);
+    font-weight: bold;
+    font-family: cursive;
+}
+
+#sub_judul7 {
+    color: #008037; font-family: Brush Script MT;
+}
+
+#bawah_navbar {
+  margin-top: 58px;
+}
+
+#maps { border: 2px solid var(--brand2);
+        border-radius: 5px;
+}
+
+#image_hover:hover { opacity: 0.5;}
+
+.satu{
+    height: 100vh;
+}
+.dua {
+  height: 90%;
+  overflow: auto;
+}
+
+/* Background */
+#bg_pelayan {
+    background-color: var(--brand2);
+}
+
+.background_kopi {
+    background-image: url("../img/background_kebun_kopi.png");
+    background-size: cover;
+}
+
+#bg_produk1 {
+    background-image: linear-gradient(to right, var(--brand), #008037b1 );
+}
+
+#bg_accordion1 {
+  background-image: linear-gradient(to right, var(--brand), #008037b1 );
+  color: white;
+  font-family: Brush Script MT;
+}
+
+.background_admin {
+    background-image: url("../img/background_navbar_2.png");
+    background-size: cover;
+}
+
+.background_login {
+  background-image: url("../img/background_login.png");
+  background-size: cover;
+}
+
+.background_menu {
+  background-image: url("../img/background_banner_satu.png");
+  background-size: cover;
+}
+
+#background_navbar {
+  background-image: url("../img/background_navbar.png");
+  background-size: cover;
+}
+
+#background_modal {
+  background-image: linear-gradient(to right, var(--brand2) , #fd8f19a1);
+  }
+
+#background_footer {
+  background-image: url("../img/footer.png");
+  background-size: cover;  
+}
+
+#background_menu {
+  background-image: url("../img/background_banner.png");
+  background-size: 100%;  
+}
+
+#konten {
+    min-height: 100vh;
+}
+
+/* Dashboard Admin */
+
+.sidebar1 {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  z-index: 10;
+  padding: 48px 0 0; 
+}
+
+.sidebar1-sticky {
+  height: calc(100vh);
+  overflow-x: hidden;
+  overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+}
+
+.menu-sticky {
+  height: 88vh;
+  overflow-x: hidden;
+  overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+}
+
+.menu-sticky-dashboard {
+  height: 62vh;
+  overflow-x: hidden;
+  overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+}
+
+.sidebar {
+    /* position: fixed; */
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 100;
+    background-image: url("../img/background_pelayann.png");
+    background-size: cover;
+  }
+    
+.sidebar-sticky {
+    height: calc(100vh);
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+  }
+  
+#gambar {
+    transition: 1s;
+}
+
+#gambar:hover{
+    margin-top: -5%;
+}
+
+#gambar1 {
+  transition: 1s;
+}
+#gambar1:hover{
+  margin-left: -8%;
+}
+
+#gambar3 {
+  transition: 1s;
+}
+#gambar3:hover{
+  margin-right: -8%;
+}
+
+thead {
+  background-image: linear-gradient(to bottom, var(--brand2) , #fd8f199f);
+  color: var(--light);
+}
+  
+#gambar_zoom {
+    transition: 1s;
+    margin: 0 auto;
+}
+  
+#gambar_zoom:hover {
+    transform: scale(1.1); 
+}
+
+#gambar_effect { 
+    animation: blinker 1s linear infinite; 
+} 
+   
+@keyframes blinker { 
+  50% { 
+      opacity: 0; 
+      } 
+  } 
+
+#icon_zoom {
+    transition: 0.5s;
+    margin: 0 auto;
+}
+  
+#icon_zoom:hover {
+    transform: scale(1.1);
+  }
+
+#icon_admin { color: var(--brand2); }
+
+.demo.active {
+  box-shadow: 0px 0px 5px 3px #00803794;
+}
+
+.demo:hover {
+  box-shadow: 0px 0px 5px 3px var(--brand2);
+}
+
+.gradiasi1{
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  background-image: linear-gradient(to bottom, #00803794, #ffffff00, #ffffff00,#ffffff00,#ffffff00,#ffffff00,#ffffff00,#ffffff00,#ffffff00  );
+}
+
+.gradiasi2{
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  background-image: linear-gradient(to top, #00803794, #ffffff00, #ffffff00,#ffffff00,#ffffff00,#ffffff00,#ffffff00,#ffffff00,#ffffff00  );
+}
+
+.logo-slide{
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  top: 88%;
+}
+
+#slide { 
+  position: relative;
+  z-index: 1;
+  top: 0px;
+}
+
+.galeri:hover{
+  transform: scale(1.2);
+}
+
+.swal-modal {
+  background-image: url("../img/background_login.png");
+}
+
+.swal-text {
+  text-align: center;
+}
+
+#bg-readonly {
+  background-color: rgb(229, 229, 229);
+}

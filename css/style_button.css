@@ -1,0 +1,91 @@
+/* Button 1 */
+#btn_user {
+    background: linear-gradient(-45deg, #008037, #0ad447, #008037);
+    background-size: 800% 10%;
+    padding: 5px;
+    display: inline-block;
+    border: none;
+    transition: all .5s ease-in-out;
+    animation: gradient 10s infinite cubic-bezier(.62, .28, .23, .99) both;
+   }
+   
+   #btn_user:hover {
+    animation: gradient 3s infinite;
+    transform: scale(1.05);
+   }
+   
+   @keyframes gradient {
+    0% {
+     background-position: 0% 50%;
+    }
+   
+    50% {
+     background-position: 100% 50%;
+    }
+   
+    100% {
+     background-position: 0% 50%;
+    }
+   }
+
+
+/* Button 2 */
+#btn_user2 {
+    background: linear-gradient(-45deg, #fd8d19, #f3f313f7, #fd8d19);
+    background-size: 800% 10%;
+    padding: 5px;
+    display: inline-block;
+    border: none;
+    transition: all .5s ease-in-out;
+    animation: gradient 10s infinite cubic-bezier(.62, .28, .23, .99) both;
+   }
+   
+   #btn_user2:hover {
+    animation: gradient 3s infinite;
+    transform: scale(1.05);
+   }
+   
+   @keyframes gradient {
+    0% {
+     background-position: 0% 50%;
+    }
+   
+    50% {
+     background-position: 100% 50%;
+    }
+   
+    100% {
+     background-position: 0% 50%;
+    }
+   }
+
+/* Button 3 */
+#btn_user3 {
+    background: linear-gradient(-45deg, #dc3535,  #ffb4b4  , #dc3535);
+    background-size: 800% 10%;
+    padding: 5px;
+    display: inline-block;
+    border: none;
+    transition: all .5s ease-in-out;
+    animation: gradient 10s infinite cubic-bezier(.62, .28, .23, .99) both;
+   }
+   
+   #btn_user3:hover {
+    animation: gradient 3s infinite;
+    transform: scale(1.05);
+   }
+   
+   @keyframes gradient {
+    0% {
+     background-position: 0% 50%;
+    }
+   
+    50% {
+     background-position: 100% 50%;
+    }
+   
+    100% {
+     background-position: 0% 50%;
+    }
+   }
+
